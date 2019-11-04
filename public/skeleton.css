@@ -1,0 +1,117 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+.skeleton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 12px;
+}
+.skeleton-header {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  background: #17233d;
+  padding: 0 5px;
+}
+.skeleton-header-logo {
+  width: 100px;height: 24px;background: rgba(255, 255, 255, 0.8);border-radius: 4px;margin-right: 20px;
+}
+.skeleton-header-nav {
+  height: 20px;
+  width: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.skeleton-header-avatar {
+  width: 24px;height: 24px;border-radius: 12px;background: #FFF;
+}
+.skeleton-nav {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  border-bottom: 1px solid #EEE;
+}
+.skeleton-nav span {
+  width: 64px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 5px;
+}
+.skeleton-sub {
+  display: flex;
+  height: 28px;
+  align-items: center;
+  border-bottom: 1px solid #EEE;
+}
+.skeleton-sub span {
+  width: 72px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.04);
+  margin: 0 5px;
+}
+.skeleton-content {
+  flex: 1;display: flex;flex-direction: column;justify-content: center;align-items: center;font-size: 16px;color: #515a6e;
+  background: #EEE;
+}
+.skeleton-footer {
+  padding: 10px 0;text-align: center;color: #515a6e;
+}
+.skeleton-loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  margin-bottom: 60px;
+}
+.skeleton-loader:before,
+.skeleton-loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: 1s spin linear infinite;
+}
+.skeleton-loader:before {
+  transform: rotateX(70deg);
+}
+.skeleton-loader:after {
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
+@keyframes spin {
+  0%, 100% {
+    box-shadow: .2em 0px 0 0px #333;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 #333;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px #333;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 #333;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 #333;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 #333;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 #333;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 #333;
+  }
+}

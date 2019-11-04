@@ -1,0 +1,183 @@
+// 全局公用色彩
+.red {
+  color: #ed4014;
+}
+.green {
+  color: #19be6b;
+}
+.searchbox {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  &.rows {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &-row {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  &-label {
+    margin-right: 10px;
+  }
+}
+
+.underline {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s;
+  &:hover {
+    color: #19be6b;
+  }
+}
+
+// 底部统计表格
+.total-table {
+  padding: 10px;
+  table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-weight: bold;
+  }
+  th {
+    padding: 5px 0;
+    background: #EEE;
+    border: 1px solid #DDD;
+  }
+  td {
+    padding: 5px 0;
+    border: 1px solid #DDD;
+    font-size: 14px;
+  }
+}
+
+// 页面
+.page {
+  min-height: 100%;
+}
+
+.detail-card {
+  margin: 10px;
+  border: 1px solid #dcdee2;
+  font-size: 14px;
+  &-title {
+    background: #EEE;
+    padding: 5px;
+    text-align: center;
+  }
+  &-block {
+    border-bottom: 1px solid #dcdee2;
+    padding: 10px 0;
+    &:last-child {
+      border: none;
+    }
+  }
+  &-item {
+    display: inline-flex;
+    width: 50%;
+    padding: 5px 10px;
+  }
+  &-label {
+    width: 100px;
+    font-weight: bold;
+  }
+
+}
+
+// 布局相关
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.editor-page {
+  height: 100%;
+  overflow: auto;
+  &-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin: 15px 0 10px 0;
+    border-bottom: 1px solid #EEE;
+    > span {
+      margin-left: 5px;
+    }
+  }
+  &-content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #FFF;
+  }
+  &-btns {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .ivu-form-item {
+    margin-bottom: 15px;
+  }
+  .ivu-form-item-error-tip {
+    position: absolute;
+    left: 270px;
+    top: 0;
+    text-align: right;
+    padding-top: 0;
+    line-height: 34px;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+.switch-label {
+  color: #888;
+  &.active {
+    color: #000;
+  }
+}
+
+
+.detail {
+  &-item {
+    font-size: 12px;
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+    label {
+      width: 60px;
+      color: #888;
+    }
+    .longer-label {
+      width: 105px
+    }
+  }
+}
+
+.check-footer {
+  background: #fafafa;
+  display: flex;
+  padding: 0 5px;
+  justify-content: flex-end;
+  .detail-item {
+    margin-left: 20px;
+  }
+}
